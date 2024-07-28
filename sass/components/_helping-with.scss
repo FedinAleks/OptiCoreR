@@ -1,0 +1,34 @@
+/* ========================
+Helping-with 
+=========================*/
+.helping-with {
+    position: relative;
+    overflow: hidden;
+
+
+&__reasons-container {
+    padding-bottom: 25px;
+    padding-top: 0;
+    padding-left: 25px;
+}
+
+&__reasons-list-item {
+    display: flex;
+    align-items: baseline;
+}
+
+&__reasons-list-item .section__text {
+    margin-bottom: 10px;
+}
+
+&__icon-bell {
+    margin-right: 20px;
+    rotate: 45deg;
+    fill: $primary-color;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        list-style: inside;        
+    }
+}
+}

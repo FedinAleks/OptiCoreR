@@ -1,0 +1,130 @@
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+    form: document.querySelector('.form__agreement'),
+    name: document.getElementById('name'),
+    tel: document.getElementById('tel'),
+    email: document.getElementById('email'),
+    request: document.getElementById('request'),
+    agreement: document.getElementById('policy'),
+    successMessage: document.getElementById('success-message'),
+    nameError: document.getElementById('name-error'),
+    telError: document.getElementById('tel-error'),
+    policyError: document.getElementById('policy-error')
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.form.addEventListener('submit', validateForm);
+  refs.tel.addEventListener('input', formatPhoneNumber);
+  refs.name.addEventListener('input', capitalizeName);
+
+  function toggleModal() {
+    document.body.classList.toggle("modal-open");
+    refs.modal.classList.toggle("is-hidden");
+  }
+
+  function validateForm(event) {
+    let isValid = true;
+
+    // Очистити попередні повідомлення про помилки
+    clearErrors();
+
+    // Перевірка полів
+    if (!refs.name.value.trim()) {
+      isValid = false;
+      showFormError(refs.nameError, 'Ім’я є обов’язковим');
+    }
+    if (!refs.tel.value.trim() || !/^\+380\d{9}$/.test(refs.tel.value.replace(/\s+/g, ''))) {
+      isValid = false;
+      showFormError(refs.telError, 'Введіть дійсний номер телефону (формат: +380XXXXXXXXX)');
+    }
+    if (refs.email.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(refs.email.value)) {
+      isValid = false;
+      showError(refs.email, 'Введіть дійсну електронну пошту');
+    }
+    if (!refs.agreement.checked) {
+      isValid = false;
+      showFormError(refs.policyError, 'Ви повинні погодитися на обробку персональних даних');
+    }
+
+    if (!isValid) {
+      event.preventDefault(); // Зупиняємо стандартну відправку форми
+    } else {
+      event.preventDefault(); // Зупиняємо стандартну відправку форми
+
+      // Відправка email
+      emailjs.send("service_kx9ukxb", "template_s9ijj5a", {
+        name: refs.name.value,
+        tel: refs.tel.value,
+        email: refs.email.value,
+        request: refs.request.value
+      })
+      .then(() => {
+        // Закриття модального вікна
+        toggleModal();
+
+        // Показ повідомлення про успішне відправлення
+        refs.successMessage.classList.remove('is-hidden');
+        
+        // Сховати повідомлення через 5 секунд
+        setTimeout(() => {
+          refs.successMessage.classList.add('is-hidden');
+        }, 5000);
+
+        // Очистити поля форми
+        refs.form.reset();
+      })
+      .catch(error => {
+        // Обробка помилок, якщо відправка email не вдалася
+        console.error('Відправка email не вдалася:', error);
+        alert('Не вдалося відправити email. Спробуйте ще раз пізніше.');
+      });
+    }
+  }
+
+  function showError(element, message) {
+    const error = document.createElement('div');
+    error.className = 'error-message';
+    error.textContent = message;
+    element.parentElement.appendChild(error);
+  }
+
+  function showFormError(element, message) {
+    element.textContent = message;
+    element.classList.add('is-visible');
+    setTimeout(() => {
+      element.classList.remove('is-visible');
+    }, 5000);
+  }
+
+  function clearErrors() {
+    refs.nameError.textContent = '';
+    refs.telError.textContent = '';
+    refs.policyError.textContent = '';
+    document.querySelectorAll('.error-message').forEach(el => el.remove());
+  }
+
+  function formatPhoneNumber(event) {
+    let value = event.target.value.replace(/\D/g, '');
+    if (!value.startsWith('380')) {
+      value = '380' + value;
+    }
+    value = value.slice(0, 12); // Залишаємо тільки 12 цифр
+    event.target.value = '+380 ' + value.slice(3); // Видалено пробіли
+  }
+
+  function capitalizeName(event) {
+    let value = event.target.value;
+    if (value.length > 50) {
+      value = value.slice(0, 50);
+    }
+    event.target.value = value
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(' ');
+  }
+})();
+

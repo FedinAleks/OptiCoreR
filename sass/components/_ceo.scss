@@ -1,0 +1,41 @@
+/* =======================
+CEO section 
+==========================*/
+.ceo__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;    
+  }
+
+.ceo__left-part {
+    width: 400px;
+    height: 600px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background-image: linear-gradient(to top, rgba(216, 191, 216, 0.3), rgba(216, 191, 216, 0.3)),
+                url(/images/CEOnew.JPG);
+        
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ceo__left-part:hover,
+.ceo__left-part:focus {
+    background-image: linear-gradient(to top, rgba(216, 191, 216, 0.2), rgba(216, 191, 216, 0.2)), url(/images/CEOnew.JPG);
+}
+
+.ceo__right-part {
+    width: 500px;
+    text-align: end;
+
+    @media screen and (max-width: 767px) {
+            margin-top: 30px;
+        }
+}

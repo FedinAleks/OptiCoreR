@@ -1,0 +1,133 @@
+/* ============================
+Footer 
+=============================== */
+.footer {
+    background-color: $background-secondary-color;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.footer>.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+            width: 100%;
+            flex-direction: column;
+        }
+}
+
+.footer__logo {
+    display: block;
+
+&-part {
+    color: $secondary-color;
+}
+}
+
+.footer__address {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+
+&-text {
+    color: $secondary-color;
+    font-size: 16px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+}
+
+.footer__left-part {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.footer__central-part {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+.footer__link {
+    display: block;
+    color: $text-color-footer;
+
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    color: $primary-color;
+}
+}
+
+.footer__social-list {
+    display: flex;
+
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+            }
+}
+
+.footer__social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #FFFFFF1A;
+
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    background-color: $background-secondary-color;
+}
+}
+
+.footer__social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer__social-link-icon {
+    display: block;
+    fill: $secondary-color;
+    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__documents {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footer__document {
+    width: calc((100% - 40px * 6)/ 3);
+
+        @media screen and (max-width: 767px) {
+                width: 100%;
+                max-width: $mobile;
+                text-align: center;
+            }
+
+    color: $text-color-footer;
+    font-size: 16px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+.all-rights-reserved_text {
+    color: $secondary-color;
+    font-size: 16px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    margin: auto;
+}

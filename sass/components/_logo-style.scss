@@ -1,0 +1,56 @@
+/* ===========================
+Стилі для логотип
+============================== */
+.logo {
+    color: $primary-color;
+    font-family: Arsenal, sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    line-height: 0.7px;
+
+        @media screen and (max-width: 767px) {
+                font-size: 28px;
+            }
+
+
+    &__header-part {
+    color: $background-secondary-color;
+    }
+
+    &__footer-part {
+    color: $secondary-color;
+    }
+
+    &__sup {
+    vertical-align: super;
+    font-size: 10px;
+    color: $text-color;
+
+    margin-left: 4px
+    }
+}
+
+.header .logo {
+    display: flex;          
+}
+
+.logo__BBA {
+    color: $dark-pink-color-accent;
+    font-family: $font-italic;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 0.7px;
+
+    @media screen and (max-width: 767px) {
+            font-size: 30px;
+            letter-spacing: 0.1px;        
+    }
+}
+
+.footer .logo__sup {
+    color: $secondary-color;
+}
+
+

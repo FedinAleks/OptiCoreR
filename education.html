@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">OptiCoreR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+          <button
+            type="button"
+            class="mobile-menu__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <!-- Header Logo -->
+          <div class="logo__wraper">
+            <a href="/" class="logo__BBA">BusinessBoost Academy</a>
+          </div>
+
+          <!-- Header Menu -->
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-list-item">
+              <a href="./index.html" class="link main-nav__menu-link"
+                >Головна</a
+              >
+            </li>
+
+            <li class="main-nav__menu-list-item">
+              <a
+                href="./education.html"
+                class="link main-nav__menu-link current-page"
+                >Академія</a
+              >
+            </li>
+
+            <li class="main-nav__menu-list-item">
+              <a href="./blog.html" class="link main-nav__menu-link">Блог</a>
+            </li>
+
+            <li class="main-nav__menu-list-item contacts-info">
+              <a href="#contacts-info" class="link main-nav__menu-link"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+          <button type="button" class="mobile-menu__button js-close-menu">
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#icon-Close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu list">
+            <li>
+              <a href="./index.html" class="link main-nav__menu-link"
+                >Про нас</a
+              >
+            </li>
+            <li>
+              <a href="./services.html" class="link main-nav__menu-link"
+                >Послуги</a
+              >
+            </li>
+            <li>
+              <a
+                href="./education.html"
+                class="link main-nav__menu-link current-page"
+                >Академія</a
+              >
+            </li>
+            <li>
+              <a href="./blog.html" class="link main-nav__menu-link">Блог</a>
+            </li>
+            <li>
+              <a
+                class="link main-nav__menu-link mail"
+                href="mailto:opticorer@gmail.com"
+                >opticorer@gmail.com</a
+              >
+            </li>
+            <li>
+              <a class="link main-nav__menu-link" href="tel:+380964355652"
+                >+38 (096) 435-56-52</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- BusinessBoost Academy section -->
+      <section class="businessboost-academy">
+        <!-- Courses -->
+        <div class="container">
+          <h1 class="visually-hidden">Міні-курси про бізнес та бізнес-процеси</h1>
+          <h2 class="hero__title">
+            Become more <span class="accent-primary">successful </span> with us
+          </h2>
+          <!-- <p class="section__text mobile-none">
+            <span class="accent-name"
+              >BusinessBoost Academy<sup class="logo__sup">TM</sup></span
+            >
+            - це бізнес-освіта для підприємців та тих, хто бажає таким бути.
+          </p>
+          <p class="section__text mobile-none">
+            Дані курси є невеликими за обсягом і вони допоможуть вам пізнати
+            свій бізнес з глибини, порозумітися на бізнес-процесах,
+            бізнес-аналізі, управлінні фінансами та плануванні фінансових
+            потоків тощо. Ви отримаєте дієві інструменти, які вже зможете
+            успішно використовувати в своїй роботі.
+          </p> -->
+          <p class="section__text">
+            <span class="accent-slogan"
+              >Замовляй свій курс та ставай успішнішим за інших вже сьогодні!
+            </span>
+          </p>
+          <h2 class="section__title">Наші курси</h2>
+          <ul class="courses__list">
+            <li class="courses__list-item">
+              <a
+                class="link courses__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <div class="courses__description">
+                  <h2 class="courses__name">Усуваємо бізнес-проблеми</h2>
+                  <div class="courses__description">
+                    <p class="courses__author">Автор курсу</p>
+                    <p class="courses__author-name">Жанна Кудрицька</p>
+                    <p class="courses__author-position">
+                      Tradeelectro Group, OptiCoreR
+                    </p>
+                  </div>
+                  <p class="courses__text">
+                    Бізнес-проблеми: від виявлення до вирішення. Інструменти,
+                    які допоможуть підприємцю вчасно ідентифікувати та усувати
+                    бізнес-проблеми
+                  </p>
+                </div>
+                <div class="courses__description">
+                  <p class="courses__duration">1,5 годин</p>
+                  <div class="courses__add-info">
+                    <p class="courses__ready">На старті</p>
+                    <p class="courses__price">599 грн</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="courses__list-item">
+              <a
+                class="link courses__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <div class="courses__description">
+                  <h2 class="courses__name">Аудит бізнес-процесів</h2>
+                  <div class="courses__description-author">
+                    <p class="courses__author">Автор курсу</p>
+                    <p class="courses__author-name">Жанна Кудрицька</p>
+                    <p class="courses__author-position">
+                      Tradeelectro Group, OptiCoreR
+                    </p>
+                  </div>
+                  <p class="courses__text">
+                    Як підприємцю налагодити роботу в компанії, щоб всі
+                    бізнес-процеси працювали системно і на результат
+                  </p>
+                </div>
+                <div class="courses__description">
+                  <p class="courses__duration">1,5 годин</p>
+                  <div class="courses__add-info">
+                    <p class="courses__ready">В розробці</p>
+                    <p class="courses__price"></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="courses__list-item">
+              <a
+                class="link courses__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <div class="courses__description">
+                  <h2 class="courses__name">Оптимізація бізнес-процесів</h2>
+                  <div class="courses__description-author">
+                    <p class="courses__author">Автор курсу</p>
+                    <p class="courses__author-name">Жанна Кудрицька</p>
+                    <p class="courses__author-position">
+                      Tradeelectro Group, OptiCoreR
+                    </p>
+                  </div>
+                  <p class="courses__text">
+                    Як оптимізувати бізнес-процеси в своїй компанії вже зараз,
+                    щоб досягти ефективності
+                  </p>
+                </div>
+                <div class="courses__description">
+                  <p class="courses__duration">1,5 годин</p>
+                  <div class="courses__add-info">
+                    <p class="courses__ready">В розробці</p>
+                    <p class="courses__price"></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="courses__list-item">
+              <a
+                class="link courses__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <div class="courses__description">
+                  <h2 class="courses__name">Ключ до успіху вашого бізнесу</h2>
+                  <div class="courses__description-author">
+                    <p class="courses__author">Автор курсу</p>
+                    <p class="courses__author-name">Жанна Кудрицька</p>
+                    <p class="courses__author-position">
+                      Tradeelectro Group, OptiCoreR
+                    </p>
+                  </div>
+                  <p class="courses__text">
+                    Плануємо свої фінансові потоки, створюємо платіжний календар
+                    та уникаємо касових розривів, вивільняємо резерви для росту
+                    бізнесу
+                  </p>
+                </div>
+                <div class="courses__description">
+                  <p class="courses__duration">1,5 годин</p>
+                  <div class="courses__add-info">
+                    <p class="courses__ready">В розробці</p>
+                    <p class="courses__price"></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="courses__list-item">
+              <a
+                class="link courses__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <div class="courses__description">
+                  <h2 class="courses__name">Розпаковка франшизи</h2>
+                  <div class="courses__description-author">
+                    <p class="courses__author">Автор</p>
+                    <p class="courses__author-name">Інна Григоренко</p>
+                    <p class="courses__author-position">Steel Evolution</p>
+                  </div>
+                  <p class="courses__text">
+                    Якщо ти плануєш купити франшизу та запустити успішний бізнес
+                    - ти просто маєш знати про все, що тобі повинен дати
+                    франчайзер в пакеті документів. Цей чек-лист просто для
+                    тебе!
+                  </p>
+                </div>
+                <div class="courses__description">
+                  <p class="courses__duration">1,5 годин</p>
+                  <div class="courses__add-info">
+                    <p class="courses__ready">На старті</p>
+                    <p class="courses__price"></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="courses__list-item">
+              <a
+                class="link courses__link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <div class="courses__description">
+                  <h2 class="courses__name">Тренінг по запуску</h2>
+                  <div class="courses__description-author">
+                    <p class="courses__author">Автор курсу</p>
+                    <p class="courses__author-name">Жанна Кудрицька</p>
+                    <p class="courses__author-position">
+                      Tradeelectro Group, OptiCoreR
+                    </p>
+                  </div>
+                  <p class="courses__text">
+                    Як не злитися на старті запуску свого бізнесу, де брати
+                    ресурси для відновлення, як тримати себе в темпі та як
+                    побудувати свій шлях від початку до запуску - вже тут всі
+                    інструменти для дії
+                  </p>
+                </div>
+                <div class="courses__description">
+                  <p class="courses__duration">1,5 годин</p>
+                  <div class="courses__add-info">
+                    <p class="courses__ready">В розробці</p>
+                    <p class="courses__price"></p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts-info">
+      <div class="container">
+        <div class="footer__left-part">
+          <address class="footer__address">
+            <p class="footer__address-text">м. Київ</p>
+            <ul class="list">
+              <li class="address-item">
+                <a class="footer__link link" href="mailto:opticorer@gmail.com"
+                  ><span class="accent-primary">opticorer</span>@gmail.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="footer__link link" href="tel:+380964355652"
+                  >+38 <span class="accent-primary">(096)</span> 435-56-52</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Footer Contacts -->
+        <div class="footer__central-part">
+          <!-- Footer Logo -->
+          <a href="/" class="logo"
+            >OptiCore<span class="footer__logo-part">R</span
+            ><sup><span class="logo__sup">TM</span></sup>
+          </a>
+        </div>
+        <!-- Footer Social -->
+        <div class="footer__right-part">
+          <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.instagram.com/kudrytska.zh?igsh=dzRoanN1dnFldGE1&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на інстаграм"
+                ><svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com/profile.php?id=61563443216060"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на фейсбук"
+              >
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/zhanna-kudrytska-8091075b/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на лінкедін"
+              >
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link youtube"
+                href="https://www.youtube.com/@user-up3ve5vn5k/podcasts"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на ютуб"
+              >
+                <svg class="footer__social-link-icon youtube" width="80" height="32">
+                  <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__documents container">
+        <a
+          class="footer__document"
+          href="./privacy-notice.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Політика конфіденційності"
+          >Політика конфіденційності</a
+        >
+
+        <a
+          class="footer__document"
+          href="./terms-of-use.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Умови використання"
+          >Умови використання</a
+        >
+
+        <a
+          class="footer__document"
+          href="./oferta.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Публічний договір оферта"
+          >Публічний договір оферта</a
+        >
+      </div>
+
+      <div class="container">
+        <p class="all-rights-reserved_text">&copy; All rights reserved</p>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

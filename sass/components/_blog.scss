@@ -1,0 +1,240 @@
+/* =========================
+Blog page
+============================ */
+.blog {    
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1920px;
+
+    color: $secondary-color;
+
+        @media screen and (max-width: 767px) {
+
+            margin-top: 61px;
+            width: 100%;
+            max-width: 767px;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            width: 100%;
+            max-width: 1199px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            max-width: 1920px;
+            max-height: 600px;
+        }
+    }
+
+
+.blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    &-item {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: calc((100% - 60px) / 2);
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        &-item:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.blog__list-item.podcasts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(/images/headphones.png);
+        
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog__list-item.articles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(/images/reading-book.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog__description {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.blog__name {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.38px;
+    color: $dark-pink-color-accent;
+
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog__list-item:hover,
+.blog__list-item:focus {
+    background-color: $pic-color;
+}
+
+.blog__list-item:hover .blog__name,
+.blog__list-item:focus .blog__name {
+    color: $text-color;
+}
+
+
+/* =========================
+Podcasts and Articles section
+============================ */
+.podcasts__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    &-item {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: calc((100% - 60px) / 2);
+        }
+    }
+
+    @media screen and (min-width: $tablet)  {
+        &-item:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.articles__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    &-item {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: calc((100% - 60px) / 2);
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        &-item:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.podcasts__list-item,
+.articles__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.podcasts__card,
+.articles__card {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    color: $text-color;
+
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.articles__description {
+margin-bottom: 10px;
+}
+
+.podcasts__name,
+.articles__name {
+ margin-bottom: 30px; 
+ font-weight: 700;
+ font-size: 30px;
+}
+
+.podcasts__text,
+.articles__text {
+    font-size: 16px;
+}
+
+.anotation {
+margin-bottom: 10px;
+font-size: 18px;
+}
+
+.quoters {
+    font-style: italic;
+}
+
+.author {
+    font-weight: 700;
+    text-align: end;
+}
+
+.articles__link {
+    padding: 10px;
+
+    font-size: 24px;    
+    align-items: end;
+    color: $dark-pink-color-accent;
+}
+
+.articles__card:focus,
+.articles__card:hover {
+background-color: $pic-color;
+}
+
+
+
+
+
+

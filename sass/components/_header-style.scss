@@ -1,0 +1,177 @@
+/* =======================
+Header
+========================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.8);
+    z-index: 10;
+
+    border-bottom: 4px solid $background-backdrop-menu-color;
+
+    & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+        
+    @media screen and (max-width: 767px) {
+            width: 100%;
+            max-width: $mobile;
+            height: 60px;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            width: $tablet;
+        }
+
+        @media screen and (min-width: $desktop) {
+            min-width: $desktop;
+            max-width: 1600px;
+        }
+}
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        @media screen and (max-width: 767px) {
+        width: 100%;    
+        max-width: $mobile;
+        }
+    
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            width: $tablet;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 100%;
+        }
+
+
+    &__menu-list {
+    display: flex;
+
+    @media screen and (max-width: 767px) {          
+                display: none;            
+    }
+}
+
+    &__menu-list-item:not(:last-child) {
+    margin-right: 50px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-right: 20px;
+    }
+    }
+
+    &__menu-list-item {
+    position: relative;
+    }
+
+
+    &__menu-link {
+    position: relative;
+    display: flex;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    align-items: center;
+
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+    &__menu-link,
+    &__submenu-link {
+    line-height: 1.2;
+    letter-spacing: 0.28px;
+    color: $title-color;
+
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    &__menu-list-item:focus &__menu-link,
+    &__menu-list-item:hover &__menu-link,
+    &__menu-list-item:active &__menu-link {
+    color: $primary-color;
+}
+
+    &__menu-link::after {
+    display: block;
+    position: absolute;
+
+    content: '';
+
+    bottom: 0;
+    left: 0;
+
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: $primary-color;
+
+    transform: scaleX(0);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    &__menu-link:hover::after {
+    transform: scaleX(1.70);
+}
+
+    &__submenu-list {
+        @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+        @media screen and (min-width: $tablet) {
+            position: absolute;
+            display: list-item;
+            opacity: 0;
+
+            pointer-events: none;
+
+            transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            left: -60%;
+            top: 100%;
+            width: 250%;
+
+            background-color: $background-backdrop-menu-color;            
+        }
+}
+
+    &__submenu-link {
+        @media screen and (max-width: 767px) {
+                display: none;
+            }
+
+        @media screen and (min-width: $tablet) {   
+            display: block;
+            padding: 5px 10px;
+            font-size: 16px; 
+   }
+}
+@media screen and (min-width: $tablet) {
+    &__submenu-link:hover,
+    &__submenu-link:focus {
+        color: var(--primary-color);        
+        }
+
+    &__menu-list-item:focus &__submenu-list,
+    &__menu-list-item:hover &__submenu-list,
+    &__menu-list-item:active &__submenu-list {
+        opacity: 1;
+        pointer-events: visible;
+        }
+}
+}
+.current-page {
+    color: $primary-color;
+}

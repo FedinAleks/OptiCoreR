@@ -1,0 +1,212 @@
+/* =============================
+Обнулення стилів 
+================================ */
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+li,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+q {
+    quotes: '\201c' '\201d';
+}
+
+q::before,
+q::after {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+
+
+/* =========================================
+Загальні стилі для body та його елементів
+============================================ */
+body {
+    font-family: $font-main, $font-italic;
+    font-size: $font-text-size;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+.container {  
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+        width: $mobile;
+    }   
+    
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: $tablet;
+    }    
+    
+    @media screen and (min-width: $desktop) {
+        width: $container-width;
+    }
+
+    &__:not(:last-child) {
+    margin-bottom: 50px;
+    }   
+}
+
+section {
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+            }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 120px;
+        padding-bottom: 120px;  
+    }
+
+&:not(:last-child) {
+    padding-bottom: 0;
+    }
+
+}
+.section__title {
+    position: relative;
+    color: $title-color;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    margin-bottom: 80px;
+
+        @media screen and (max-width: 767px) {
+                font-size: 28px;
+            }
+}
+
+.section__subtitle {
+    margin-bottom: 26px;
+
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    color: $title-color;
+
+    @media screen and (max-width: 767px) {
+            font-size: 20px;
+        }
+}
+
+.section__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.38px;
+
+&:not(:last-child) {
+    margin-bottom: 30px;
+}
+}    
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.accent {
+    color: $text-color-accent;
+    font-weight: 700;
+    font-size: 20px;
+
+&-big {
+    color: $text-color-accent;
+    font-weight: 700;
+    font-size: 34px;
+
+        @media screen and (max-width: 767px) {
+                font-size: 28px;
+            }
+}
+
+&-slogan {
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    @media screen and (min-width: $desktop) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    color: $text-color-accent;
+
+    font-weight: 700;
+    font-style: italic;
+    font-size: 28px;
+    text-align: center;
+                @media screen and (max-width: 767px) {
+                    font-size: 20px;
+                }
+}
+
+&-primary {
+    color: $primary-color;
+    font-weight: 700;
+}
+
+&-primary-dark {
+    color: $text-color-accent;
+}
+
+}
+
+.block {
+    padding: 50px;
+    border-radius: 40px;
+    background-color: $pic-color;
+
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 700;    
+}
+
+.frame {
+    // padding: 30px;
+
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-none {
+@media screen and (max-width: 767px) {
+    display: none;
+}
+}
+

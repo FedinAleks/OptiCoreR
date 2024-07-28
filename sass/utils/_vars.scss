@@ -1,0 +1,51 @@
+/* ========================
+Основні кольори
+=========================== */
+
+    /* Кольори для фону */
+    $background-color: #FFFFFF;
+    $background-secondary-color: #443d44;
+    $background-third-color: #FCFAFC;
+    $background-backdrop-menu-color: #f9f4f8;
+
+
+    /* Кольори для офомлення акцентів */
+    $primary-color: #d8bfd8;
+    $secondary-color: #FFFFFF;
+    $text-color-accent: #945a94;
+    $pic-color:  #D9DEFA;
+    /* запасний колір #c1d6c2; */
+
+
+    /* Кольори для шрифтів */
+    $text-color: #242124;
+    $title-color: #443d44;
+    $text-color-footer: rgba(255, 255, 255, 0.6);
+    $text-form-label: #757575;
+
+    $border-color: rgba(33, 33, 33, 0.2);
+
+
+    /* Кольори для офомлення карток курсів */
+    $green-color-accent: #b8cf69;
+    $dark-pink-color-accent: #BE95BE;
+    $background-card-gold-color: rgba(255, 215, 0, 0.1);
+    $gold: rgb(255, 215, 0);
+
+
+
+/* ========================
+Основні шрифти
+=========================== */
+
+    $font-main: Arsenal,
+    sans-serif;
+    $font-italic: "Great Vibes",
+    cursive;
+    $font-text-size: 12px;
+
+/* ========================
+Ширина елементів
+=========================== */
+
+    $container-width: 1200px;

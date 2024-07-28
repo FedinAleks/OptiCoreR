@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">OptiCoreR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+          <button
+            type="button"
+            class="mobile-menu__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <!-- Header Logo -->
+          <div class="logo__wraper">
+            <a href="/" class="logo">
+              <span class="logo__header-part">Opti</span>
+              <p>Core</p>
+              <p>R</p>
+            </a>
+          </div>
+
+          <!-- Header Menu -->
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-list-item">
+              <a href="./index.html" class="link main-nav__menu-link"
+                >Про нас</a
+              >
+            </li>
+            <li class="main-nav__menu-list-item">
+              <a
+                href="./services.html"
+                class="link main-nav__menu-link current-page"
+                >Послуги</a
+              >
+              <ul class="main-nav__submenu-list">
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-consultation.html"
+                    class="link main-nav__submenu-link"
+                    >Консультації</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-analasys.html"
+                    class="link main-nav__submenu-link"
+                    >Аналіз бізнесу</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-processes.html"
+                    class="link main-nav__submenu-link"
+                    >Опис та оптимізація бізнес-процесів</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-fin-models.html"
+                    class="link main-nav__submenu-link"
+                    >Фінансове моделювання</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-plan.html"
+                    class="link main-nav__submenu-link"
+                    >Написання бізнес-планів</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-franch-audit.html"
+                    class="link main-nav__submenu-link"
+                    >Аудит франшизи</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-trainings.html"
+                    class="link main-nav__submenu-link"
+                    >Тренінги</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__menu-list-item">
+              <a href="./education.html" class="link main-nav__menu-link"
+                >Академія</a
+              >
+            </li>
+            <li class="main-nav__menu-list-item">
+              <a href="./blog.html" class="link main-nav__menu-link">Блог</a>
+            </li>
+
+            <li class="main-nav__menu-list-item contacts-info">
+              <a href="#contacts-info" class="link main-nav__menu-link"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+          <div class="header__button">
+            <button type="button" class="btn__book" data-modal-open>
+              <span class="btn__book-desctop">Замовити</span>
+              <svg
+                class="button__icon mobile-menu__button"
+                width="24"
+                height="24"
+              >
+                <use href="./images/svg/symbol-defs.svg#icon-message"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+          <button type="button" class="mobile-menu__button js-close-menu">
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#icon-Close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu list">
+            <li>
+              <a href="./index.html" class="link main-nav__menu-link"
+                >Про нас</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="link main-nav__menu-link current-page"
+                >Послуги</a
+              >
+            </li>
+            <li>
+              <a href="./education.html" class="link main-nav__menu-link"
+                >Навчання</a
+              >
+            </li>
+            <li>
+              <a href="./blog.html" class="link main-nav__menu-link">Блог</a>
+            </li>
+            <li>
+              <a
+                class="link main-nav__menu-link mail"
+                href="mailto:opticorer@gmail.com"
+                >opticorer@gmail.com</a
+              >
+            </li>
+            <li>
+              <a class="link main-nav__menu-link" href="tel:+380964355652"
+                >+38 (096) 435-56-52</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Модальне вікно -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <p class="form__title">Замовити бізнес-консультацію</p>
+
+          <form class="form" autocomplete="on">
+            <div class="form__left-part">
+              <div class="form__group">
+                <label class="form__group-label" for="name"
+                  >Ваше Ім&#8216;я</label
+                >
+                <input
+                  autofocus
+                  type="text"
+                  name="name"
+                  class="form__group-input"
+                  id="name"
+                  placeholder=" "
+                  
+                />
+
+                <svg class="form__group-icon" width="18" height="18">
+                  <use href="./images/svg/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </div>
+
+              <div class="form__group">
+                <label class="form__group-label" for="tel"
+                  >Номер телефону</label
+                >
+                <input
+                  type="tel"
+                  name="tel"
+                  class="form__group-input"
+                  id="tel"
+                  placeholder=" "
+                />
+                <svg class="form__group-icon" width="18" height="18">
+                  <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </div>
+
+              <div class="form__group">
+                <label class="form__group-label" for="email"
+                  >Ваша електронна пошта</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form__group-input"
+                  id="email"
+                  placeholder=" "
+                />
+                <svg class="form__group-icon" width="18" height="18">
+                  <use href="./images/svg/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+              <div class="form__group mobile-none">
+                <label class="form__group-label" for="company"
+                  >Назва компанії</label
+                >
+                <input
+                  type="text"
+                  name="company"
+                  class="form__group-input"
+                  id="company"
+                  placeholder=" "
+                />
+              </div>
+            </div>
+
+            <div class="form__right-part form__group">
+              <label class="form__group-label" for="request"
+                >Напишіть коротко суть Вашого звернення</label
+              >
+              <textarea
+                class="form__group-textarea"
+                name="comment"
+                rows="20"
+                id="request"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+          </form>
+
+          <form class="form__agreement" autocomplete="off">
+            <label class="form__agreement-checkbox" for="policy">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="agreement"
+                id="policy"
+                value="Даю згоду на обробку персональних даних згідно Політики конфіденційності"
+                checked
+              />
+              <span class="agreement"
+                >Я погоджуюся на обробку моїх персональних даних відповідно до
+                <a href="./privacy-notice.html" class="agreement__link"
+                  >Політики конфіденційності</a
+                >
+                та
+                <a href="./terms-of-use.html" class="agreement__link"
+                  >Умов використання</a
+                >
+              </span>
+              <svg class="form__agreement-checkbox-icon" width="16" height="15">
+                <use href="./images/svg/symbol-defs.svg#icon-check"></use>
+              </svg>
+            </label>
+
+            <button type="submit" class="btn__send">Відправити</button>
+          </form>
+
+          <button type="button" class="btn__close" data-modal-close>
+            <!-- <svg class="icon close" width="11" height="11">
+                  <use href="./images/svg/symbol-defs.svg#icon-Close"></use>
+                </svg> -->
+          </button>
+        </div>
+      </div>
+      <!-- Модальне вікно end -->
+    </header>
+
+    <main>
+      <!-- Franch-audit section -->
+      <section class="franch-audit">
+        <div class="container">
+          <h1 class="hero__title">
+            Розпаковка франшизи,<span class="accent-primary">
+              аудит пакету документів</span
+            >
+          </h1>
+          <h2 class="section__subtitle">
+            Найпоширенішою причиною розірвання угод франчайзингу є невиправдані
+            очікування стосовно прибутку чи розвитку бізнесу. Тому розуміти як
+            припинити договір з франчайзером (як розірвати угоду) потрібно ще на
+            старті проекту, щоб уникнути проблем і мати змогу екологічно вийти з
+            бізнесу.
+          </h2>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <p class="section__text">
+            Кожен бізнес варто оцінювати індивідуально з врахуванням очікувань і
+            можливостей. Є франшизи, умовно кажучи, за 1 тис.дол, а є 50 тис і
+            вище. Когось влаштує невеличка кав’ярня з прибутковістю в місяць
+            близько 30 тис грн. і двома найманими працівниками-баристами, а
+            хтось бажає відкрити велику медичну лабораторію або щось інше.
+          </p>
+          <p class="section__text">
+            Тому, якщо вже з’явилась «хімія» з певним напрямком у бізнесі, і ви
+            себе прекрасно асоціюєте з продуктом, послугою, ім’ям та брендом,
+            варто зробити своє маркетингове дослідження ринку тої локації, де ви
+            плануєте розміщати бізнес, і скласти бізнес-план. Зазвичай в пакеті
+            документів, який надається франшизі, такі дослідження не входять.
+            Але можуть виконуватися за додаткову плату. Чим детальніше і
+            реалістичніше будуть зроблені дослідження, тим точніше ви побачите,
+            що ви можете отримати від цього бізнесу. Ми радимо зробити в
+            бізнес-плані кілька прогнозів: оптимістичний, реалістичний та
+            песимістичний. Також буде корисно запитати у франчайзера інформацію
+            про успішні і неуспішні запуски в різних локаціях.
+          </p>
+          <h3 class="section__subtitle">
+            Перевірка та аналіз пакету документів - розпаковка франшизи
+          </h3>
+
+          <p class="section__text">
+            Діагностика франшизи не буде повноцінною без аналізу всіх посібників
+            та інструкцій щодо ведення бізнесу, які отримує франчайзі після
+            укладання договору. На цьому етапі аналізуються документи, що
+            оформляють франчайзингові відносини: посібник з управління та
+            ведення бізнесу (Business book, Franchise book, Операційна книга),
+            посібник із дотримання фірмового стилю (Brand book), книга
+            стандартів для співробітників (Hand book).
+          </p>
+          <p class="section__text">
+            Від якості та повноти цих матеріалів залежить і якість тиражування
+            бізнес-системи франчайзера. Оскільки ці матеріали є своєрідною
+            інструкцією з її експлуатації та ефективного застосування бізнесу,
+            важливо отримати від аудитора експертну оцінку їхньої працездатності
+            та рекомендації з доопрацювання.
+          </p>
+          <p class="section__text">
+            Рентабельність бізнесу франчайзі прямо пропорційна ефективності
+            франчайзингової програми. Фінансові проблеми франчайзі можуть бути
+            спричинені різними причинами, серед яких відсутність підтримки
+            франчайзера на якомусь етапі роботи, брак маркетингової підтримки,
+            необґрунтовані суми постійних відрахувань та розміру початкових
+            інвестицій. Найчастіше погані фінансові результати виникають через
+            некоректно прораховані операційні витрати франчайзі. Аналіз
+            фінансових показників франчайзингової програми виявить проблеми
+            партнерських підприємств та допоможе зрозуміти причину їх
+            виникнення.
+          </p>
+          <p class="section__text">
+            Аудит систем маркетингу - це насамперед аналіз цільової аудиторії,
+            від якої залежить стратегія просування франшизи та успіх
+            франчайзингової програми в цілому, а також аналіз використовуваних
+            каналів просування франшизи та ефективності кожного з них. Також на
+            цьому етапі аудитор має провести аналіз сайту, рекламних та
+            презентаційних матеріалів, що використовуються для просування
+            франшизи та атестацію кадрів, задіяних у процесі просування.
+          </p>
+          <p class="section__text">
+            Аудит франшизи може містити безліч інших аспектів, що впливають на
+            ефективність франчайзингової програми. Так, для великих корпорацій
+            це може бути аудит персоналу, що включає перевірку кваліфікації
+            складу менеджерів, що беруть участь у розробці та просуванні
+            франшизи, ступінь їхньої зацікавленості у проекті та персональній
+            мотивації.
+          </p>
+          <p class="section__text">
+            Що стосується вибору аудиторського складу, то компанія може залучати
+            як сторонніх експертів, так і може обійтися своїми внутрішніми
+            ресурсами. У цих способів є свої переваги та недоліки. Внутрішні
+            фахівці компанії добре орієнтуються у бізнес-процесах компанії, але
+            часто не знають специфіки та особливостей франчайзингового
+            спрямування. У зв'язку з цим допускають неточності не так в аналізі,
+            як у рекомендаціях та наданих коригуючих діях за результатами
+            перевірки. До того ж аудит, який проводить внутрішні співробітники,
+            часто втрачає об'єктивність оцінки, тому значні недоліки існуючої
+            системи можуть бути втрачені. При зверненні до незалежних
+            консультантів цих проблем можна уникнути. Проте необхідно
+            переконатися у кваліфікованості зовнішніх експертів, їх досвіді та
+            відгуках інших компаній щодо якості їхньої роботи.
+          </p>
+          <p class="section__text">
+            Як уже було сказано вище, головна частина аудиту — розробка дій, що
+            коригують, і, при необхідності, внесення змін до загальної стратегії
+            просування франшизи. Тобто, дії та кваліфікація експертів прямо
+            впливатимуть на результат аудиту і, як наслідок, на успішність
+            розвитку бізнесу в цілому.
+          </p>
+          <p class="section__text">
+            Саме тому ми пропонуємо провести аудит пакету документів, договору
+            франчайзингу та всіх необхідних інструкцій, карт процесів,
+            досліджень, бізнес-планів перед купівлею. Адже проблеми легше
+            попередити, ніж потім виправляти.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts-info">
+      <div class="container">
+        <div class="footer__left-part">
+          <address class="footer__address">
+            <p class="footer__address-text">м. Київ</p>
+            <ul class="list">
+              <li class="address-item">
+                <a class="footer__link link" href="mailto:opticorer@gmail.com"
+                  ><span class="accent-primary">opticorer</span>@gmail.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="footer__link link" href="tel:+380964355652"
+                  >+38 <span class="accent-primary">(096)</span> 435-56-52</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Footer Contacts -->
+        <div class="footer__central-part">
+          <!-- Footer Logo -->
+          <a href="/" class="logo"
+            >OptiCore<span class="footer__logo-part">R</span
+            ><sup><span class="logo__sup">TM</span></sup>
+          </a>
+        </div>
+        <!-- Footer Social -->
+        <div class="footer__right-part">
+          <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.instagram.com/kudrytska.zh?igsh=dzRoanN1dnFldGE1&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на інстаграм"
+                ><svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com/profile.php?id=61563443216060"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на фейсбук"
+              >
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/zhanna-kudrytska-8091075b/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на лінкедін"
+              >
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link youtube"
+                href="https://www.youtube.com/@user-up3ve5vn5k/podcasts"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на ютуб"
+              >
+                <svg class="footer__social-link-icon youtube" width="80" height="32">
+                  <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__documents container">
+        <a
+          class="footer__document"
+          href="./privacy-notice.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Політика конфіденційності"
+          >Політика конфіденційності</a
+        >
+
+        <a
+          class="footer__document"
+          href="./terms-of-use.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Умови використання"
+          >Умови використання</a
+        >
+
+        <a
+          class="footer__document"
+          href="./oferta.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Публічний договір оферта"
+          >Публічний договір оферта</a
+        >
+      </div>
+
+      <div class="container">
+        <p class="all-rights-reserved_text">&copy; All rights reserved</p>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

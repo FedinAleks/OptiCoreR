@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">OptiCoreR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+          <button
+            type="button"
+            class="mobile-menu__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <!-- Header Logo -->
+          <div class="logo__wraper">
+            <a href="/" class="logo">
+              <span class="logo__header-part">Opti</span>
+              <p>Core</p>
+              <p>R</p>
+            </a>
+          </div>
+
+          <!-- Header Menu -->
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-list-item">
+              <a
+                href="./index.html"
+                class="link main-nav__menu-link current-page"
+                >Про нас</a
+              >
+            </li>
+            <li class="main-nav__menu-list-item">
+              <a href="./services.html" class="link main-nav__menu-link"
+                >Послуги</a
+              >
+              <ul class="main-nav__submenu-list">
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-consultation.html"
+                    class="link main-nav__submenu-link"
+                    >Консультації</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-analasys.html"
+                    class="link main-nav__submenu-link"
+                    >Аналіз бізнесу</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-processes.html"
+                    class="link main-nav__submenu-link"
+                    >Опис та оптимізація бізнес-процесів</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-fin-models.html"
+                    class="link main-nav__submenu-link"
+                    >Фінансове моделювання</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-plan.html"
+                    class="link main-nav__submenu-link"
+                    >Написання бізнес-планів</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-franch-audit.html"
+                    class="link main-nav__submenu-link"
+                    >Аудит франшизи</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-trainings.html"
+                    class="link main-nav__submenu-link"
+                    >Тренінги</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__menu-list-item">
+              <a href="./education.html" class="link main-nav__menu-link"
+                >Академія</a
+              >
+            </li>
+
+            <!-- <li class="main-nav__menu-list-item">
+                <a href="./initiatives.html" class="link main-nav__menu-link"
+                  >Ініціативи</a
+                >
+                <ul class="main-nav__submenu-list">
+                  <li class="main-nav__submenu-list-item">
+                    <a
+                      href="./initiatives.html#womens-business"
+                      class="link main-nav__submenu-link"
+                      >Бізнес для жінок і про жінок - по-жіночому про бізнес</a
+                    >
+                  </li>
+                  <li class="main-nav__submenu-list-item">
+                    <a
+                      href="./initiatives.html#womens-business"
+                      class="link main-nav__submenu-link"
+                      >Інклюзивна співпраця</a
+                    >
+                  </li>
+                </ul>
+              </li> -->
+
+            <li class="main-nav__menu-list-item">
+              <a href="./blog.html" class="link main-nav__menu-link">Блог</a>
+            </li>
+
+            <li class="main-nav__menu-list-item contacts-info">
+              <a href="#contacts-info" class="link main-nav__menu-link"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+          <div class="header__button">
+            <button type="button" class="btn__book" data-modal-open>
+              <span class="btn__book-desctop">Замовити</span>
+              <svg
+                class="button__icon mobile-menu__button"
+                width="24"
+                height="24"
+              >
+                <use href="./images/svg/symbol-defs.svg#icon-message"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+          <button type="button" class="mobile-menu__button js-close-menu">
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#icon-Close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu list">
+            <li>
+              <a
+                href="./index.html"
+                class="link main-nav__menu-link current-page"
+                >Про нас</a
+              >
+            </li>
+            <li>
+              <a href="./services.html" class="link main-nav__menu-link"
+                >Послуги</a
+              >
+            </li>
+            <li>
+              <a href="./education.html" class="link main-nav__menu-link"
+                >Академія</a
+              >
+            </li>
+            <!-- <li>
+                <a href="./initiatives.html" class="link main-nav__menu-link"
+                  >Ініціативи</a>              
+              </li> -->
+            <li>
+              <a href="./blog.html" class="link main-nav__menu-link">Блог</a>
+            </li>
+            <li>
+              <a
+                class="link main-nav__menu-link mail"
+                href="mailto:opticorer@gmail.com"
+                >opticorer@gmail.com</a
+              >
+            </li>
+            <li>
+              <a class="link main-nav__menu-link" href="tel:+380964355652"
+                >+38 (096) 435-56-52</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Модальне вікно -->
+      <div class="backdrop is-hidden" data-modal="">
+        <div class="modal">
+          <p class="form__title">Замовити бізнес-консультацію</p>
+
+          <form class="form" autocomplete="on">
+            <div class="form__left-part">
+              <div class="form__group">
+                  <label class="form__group-label" for="name">Ваше Ім‘я</label>
+                  <input type="text" name="name" class="form__group-input" id="name" placeholder="  " maxlength="40" required>
+                  <svg class="form__group-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-person"></use>
+                  </svg>
+                </div>
+
+              <div class="form__group">
+                  <label class="form__group-label" for="tel">Номер телефону</label>
+                  <input type="tel" name="tel" class="form__group-input" id="tel" placeholder="  " pattern="\+380[0-9]{9}" required>
+                  <svg class="form__group-icon" width="18" height="18">
+                    <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </div>
+
+              <div class="form__group">
+                <label class="form__group-label" for="email">Ваша електронна пошта</label>
+                <input type="email" name="email" class="form__group-input" id="email" placeholder=" ">
+                <svg class="form__group-icon" width="18" height="18">
+                  <use href="./images/svg/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+              <div class="form__group mobile-none">
+                <label class="form__group-label" for="company">Назва компанії</label>
+                <input type="text" name="company" class="form__group-input" id="company" placeholder=" ">
+              </div>
+            </div>
+
+            <div class="form__right-part form__group">
+              <label class="form__group-label" for="request">Напишіть коротко суть Вашого звернення</label>
+              <textarea class="form__group-textarea" name="comment" rows="20" id="request" placeholder=" "></textarea>
+            </div>
+          </form>
+
+          <form class="form__agreement" autocomplete="off">
+            <label class="form__agreement-checkbox" for="policy">
+              <input class="checkbox" type="checkbox" name="agreement" id="policy" value="Даю згоду на обробку персональних даних згідно Політики конфіденційності">
+              <span class="agreement">Я погоджуюся на обробку моїх персональних даних відповідно до
+                <a href="./privacy-notice.html" class="agreement__link">Політики конфіденційності</a>
+                та
+                <a href="./terms-of-use.html" class="agreement__link">Умов використання</a>
+              </span>
+              <svg class="form__agreement-checkbox-icon" width="16" height="15">
+                <use href="./images/svg/symbol-defs.svg#icon-check"></use>
+              </svg>
+            </label>
+            <div id="name-error" class="form-error is-hidden">Ім’я є обов’язковим</div>
+            <div id="tel-error" class="form-error is-hidden">Введіть дійсний номер телефону (формат: +380XXXXXXXXX)</div>
+            <div id="policy-error" class="form-error is-hidden">Ви повинні погодитися на обробку персональних даних</div>
+
+            <button type="submit" class="btn__send">Відправити</button>
+          </form>
+
+          <button type="button" class="btn__close" data-modal-close="">
+            <!-- <svg class="icon close" width="11" height="11">
+                  <use href="./images/svg/symbol-defs.svg#icon-Close"></use>
+                </svg> -->
+          </button>
+        </div>
+      </div>
+      <div id="success-message" class="success-message is-hidden">
+          Запит успішно відправлено
+      </div>
+      <div id="global-error" class="global-error"></div>
+      <!-- Модальне вікно end -->
+    </header>
+
+    <main>
+      <!-- Hero section start-->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Create <span class="accent-primary">opportunities</span> to grow
+            <span class="visually-hidden"> консалтингові послуги</span>
+          </h1>
+          <p class="hero__overlay-text section__text">consulting services</p>
+        </div>
+      </section>
+
+      <!-- About US section -->
+      <section class="about-us">
+        <div class="container">
+          <h2 class="section__title visually-hidden">Про нас</h2>
+          <p class="section__text block">
+            <span class="accent-big">OptiCoreR</span> - це консалтингова
+            компанія, яка надає послуги з
+            <span class="accent-primary-dark">
+              бізнес-аналізу, опису та оптимізації бізнес-процесів,</span
+            >
+            інших послуг стратегічного та управлінського характеру для
+            підприємств різних галузей та масштабів.
+          </p>
+          <p class="section__text mobile-none">
+            В нашій команді експерти та професіонали з професійними знаннями,
+            підприємницьким мисленням та багаторічним досвідом у різних сферах
+            бізнесу. Це дозволяє нам розробляти індивідуальні стратегії та
+            рішення, які відповідають конкретним потребам та цілям кожного
+            нашого клієнта.
+          </p>
+
+          <p class="section__text">
+            <span class="accent">Наша місія</span>
+            – створювати можливості для зростання вашого бізнесу. Ми принесемо у
+            ваш бізнес порядок, системність та спокій.
+          </p>
+          <p class="section__text mobile-none">
+            Нас надихає і мотивує ваш успіх, а тому ми пристрасні до підтримки
+            бізнесу в його успішному розвитку. Ми дуже задоволені, коли наші
+            партнери можуть досягти бажаного економічного ефекту та отримати
+            поштовх до розвитку завдяки нашій взаємодії. Це нас надихає та
+            мотивує рухатись далі. Нас захоплюють спільні бізнес-проєкти та
+            реалізація ідей щодо розвитку компаній різних галузей економіки у
+            відповідності до мінливості зовнішнього середовища.
+          </p>
+        </div>
+      </section>
+
+      <!-- Helping-with section -->
+      <section class="helping-with">
+        <div class="container">
+          <h2 class="section__title">Ми будемо вам корисні, якщо</h2>
+          <p class="section__text mobile-none visually-hidden">
+            Ось невеликий перелік дзвіночків, які дають сигнал, що вже потрібно
+            здійснювати аналіз бізнесу, виявляти бізнес-проблеми та працювати з
+            бізнес-процесами:
+          </p>
+          <div class="helping-with__reasons-container">
+            <ul class="helping-with__reasons-list">
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ви бачите, що
+                  <span class="accent">ресурси компанії з&#39;їдаються</span>, а
+                  результат не відповідає вкладеним зусиллям, або взагалі
+                  відсутній.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо <span class="accent">касові розриви</span> ваш постійний
+                  супутник.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо в робочому процесі повний
+                  <span class="accent">хаос</span>.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо задачі, питання та проблеми виникають хаотично, хаотично
+                  <span class="accent">в авральному режимі</span> вирішуються і
+                  <span class="accent">повторюються знову</span> через деякий
+                  час.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ваші підлеглі забігають до вас в кабінет зі словами
+                  <span class="accent">&#8221;Шеф, все пропало!&#8220;</span>
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ваші співробітники
+                  <span class="accent">не розуміють хто за що відповідає</span>
+                  і до кого звертатися з запитаннями, тому за будь-яких питань
+                  постійно звертаються до вас.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо у вас присутня
+                  <span class="accent">швидкоплинність кадрів.</span>
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо співробітники дуже часто
+                  <span class="accent">невдоволені задачами</span>, які їм
+                  &#8221;нарізають&#8220;.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ваші співробітники просто
+                  <span class="accent">незадоволені роботою</span>.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ваші <span class="accent">співробітники</span> мають свою
+                  думку, а у вас нема часу її вислухати, або вони
+                  <span class="accent">жаліються, що їх не чують</span>.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ви
+                  <span class="accent">контролюєте кожну операційну дію</span>
+                  на нижніх рівнях управління.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ви не знаєте цінність кожного з ваших співробітників і
+                  <span class="accent">не можете їм делегувати задачі</span>.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ви
+                  <span class="accent"
+                    >не знаєте, чим ваші співробітники займаються на робочих
+                    місцях</span
+                  >, але вони постійно зайняті і часто залишаються після роботи
+                  &#8221;доганяти вчорашній день&#8220;.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ви помітили, що
+                  <span class="accent">інформація втрачається</span> або
+                  надходить у неповному чи викривленому вигляді.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо у вас в компанії
+                  <span class="accent">відсутня база знань</span> і кожного
+                  нового співробітника потрібно заново навчати &#8221;на
+                  пальцях&#8220;.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо
+                  <span class="accent"
+                    >операційні дії дублюється різними відділами</span
+                  >
+                  і у внутрішня звітність нагадує вираз &#8221;ті самі яйця, але
+                  в профіль&#8220;.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ви
+                  <span class="accent">плануєте масштабувати свій бізнес</span>
+                  чи виходити на нові ринки.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо у вас є розроблена
+                  <span class="accent"
+                    >система мотивації, але вона не працює</span
+                  >.
+                </p>
+              </li>
+              <li class="helping-with__reasons-list-item">
+                <svg class="helping-with__icon-bell" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-bell"></use>
+                </svg>
+                <p class="section__text">
+                  Якщо ви
+                  <span class="accent">хочете розробити систему КРІ </span>і
+                  контролювати досягнення цілей.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <p class="section__text mobile-none">
+            Це лише невеличкий перелік сигналів, які вказують на необхідність
+            проведення аналізу бізнес-проблем, проведення аудиту
+            бізнес-процесів, з подальшим їхнім описом та оптимізацією. Ці
+            сигнали, зазвичай, вже тормозять розвиток компанії, створючи
+            хаотичний рух.
+          </p>
+          <p class="section__text block">
+            <span class="accent-big"
+              >Гадаєте все вирулиться само собою? - НІ!</span
+            >
+            Ігнорування таких сигналів призводить до збоїв в роботі, переривання
+            ланцюгів формування інформації, отримання неповної чи недостовірної
+            інформації, прийняття на основі неповних чи викривлених даних
+            неякісних рішень, та в кінцевому випадку втрат прибутку...
+          </p>
+
+          <p class="section__text">
+            <span class="accent"
+              >Якщо ви бачите більше двох дзвіночків у себе в компанії -
+              телефонуйте до нас, а ми знаємо що з цим роботи!</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- Our Offer section -->
+      <section class="offers">
+        <div class="container">
+          <h2 class="section__title">Що ми пропонуємо</h2>
+          <p class="section__text block">
+            <span class="accent-big">Вихід з хаосу,</span> налагодження процесів
+            ведення бізнесу та управління та досягнення цілей та результатів,
+            <span class="accent-primary-dark">аналіз бізнесу</span>, аналіз
+            бізнес-моделі,
+            <span class="accent-primary-dark"
+              >опис та оптимізація бізнес-процесів</span
+            >
+            , аналіз та
+            <span class="accent-primary-dark"> виявлення бізнес-проблем</span>,
+            супроводження проектів
+            <span class="accent-primary-dark">
+              автоматизації бізнес-процесів</span
+            >, аудит пакету документів для
+            <span class="accent-primary-dark"> запуску бізнесу по франшизі</span
+            >, побудова фінансових моделей, написання бізнес-планів та допомога
+            в багатьох інших аспектах управління. Детальніше про послуги
+            <a href="./services.html" class="link">
+              <span class="accent-big"> ТУТ</span></a
+            >
+          </p>
+          <p class="section__text visually-hidden">
+            Наші послуги можуть включати також аналіз конкретної ситуації,
+            розробку стратегій, впровадження нових методів та технологій,
+            проведення тренінгів робочих груп замовника, а також надання
+            експертної підтримки у вирішенні конкретних проблем та завдань.
+          </p>
+          <p class="section__text mobile-none visually-hidden">
+            Ми допомагаємо нашим клієнтам розібратися і оптимально організувати
+            робочі процеси, систематизувати щоденні дії, підвищувати
+            продуктивність, усунути нефективні чи повторювані процеси, зменшити
+            час на обробку інформації, уникнути втрат інформації між відділами
+            компанії, підійти до масштабування бізнесу та здійснити його,
+            досягати стратегічних цілей.
+          </p>
+          <p class="section__text mobile-none visually-hidden">
+            Експерти консалтингу допоможуть швидко розібратися з питаннями та
+            проблемами, які постали перед підприємством, таким чином ви зможете
+            повернути стабільний стан своїй компанії або ж досягти стабільності
+            розвитку вже завтра. До кожного клієнта здійснюється
+            <span class="accent">індивідуальний підхід,</span> адже ми розуміємо
+            унікальність кожного з них. Також ми гарантуємо нашим клієнтам
+            <span class="accent">повну конфіденційність.</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Benefits section -->
+      <section class="benefits">
+        <div class="container">
+          <h2 class="section__title">Чому МИ?</h2>
+
+          <ul class="benefits__list">
+            <li class="benefits__list-item">
+              <div class="benefits__description">
+                <svg class="benefits__icon" width="40" height="40">
+                  <use href="./images/svg/icon-benefits.svg#icon-books"></use>
+                </svg>
+                <h2 class="benefits__name">Ми - експерти</h2>
+                <p class="benefits__text">
+                  20 років досвіду в бізнесі в різних областях та галузях
+                  економіки та 12+ в управлінні
+                </p>
+              </div>
+            </li>
+
+            <li class="benefits__list-item">
+              <div class="benefits__description">
+                <svg class="benefits__icon" width="40" height="40">
+                  <use href="./images/svg/icon-benefits.svg#icon-codepen"></use>
+                </svg>
+                <h2 class="benefits__name">розглядаємо систему вцілому</h2>
+                <p class="benefits__text">
+                  Дивимося вглиб системи за принципом 3D-куба
+                </p>
+              </div>
+            </li>
+
+            <li class="benefits__list-item">
+              <div class="benefits__description">
+                <svg class="benefits__icon" width="40" height="40">
+                  <use
+                    href="./images/svg/icon-benefits.svg#icon-eye-plus"
+                  ></use>
+                </svg>
+                <h2 class="benefits__name">
+                  вибудовуємо індивідуальний підхід
+                </h2>
+                <p class="benefits__text">Ми цінуємо унікальність кожного</p>
+              </div>
+            </li>
+
+            <li class="benefits__list-item">
+              <div class="benefits__description">
+                <svg class="benefits__icon" width="40" height="40">
+                  <use
+                    href="./images/svg/icon-benefits.svg#icon-briefcase"
+                  ></use>
+                </svg>
+                <h2 class="benefits__name">креативність</h2>
+                <p class="benefits__text">
+                  Нестандартне мислення та бачення завжди дає гарний результат
+                </p>
+              </div>
+            </li>
+
+            <li class="benefits__list-item">
+              <div class="benefits__description">
+                <svg class="benefits__icon" width="40" height="40">
+                  <use
+                    href="./images/svg/icon-benefits.svg#icon-stats-bars"
+                  ></use>
+                </svg>
+                <h2 class="benefits__name">орієнтовані на результат</h2>
+                <p class="benefits__text">
+                  Результат нашої роботи - це якість у кількісному вимірі вашого
+                  успіху
+                </p>
+              </div>
+            </li>
+
+            <li class="benefits__list-item">
+              <div class="benefits__description">
+                <svg class="benefits__icon" width="40" height="40">
+                  <use
+                    href="./images/svg/icon-benefits.svg#icon-magic-wand"
+                  ></use>
+                </svg>
+                <h2 class="benefits__name">створюємо можливості</h2>
+                <p class="benefits__text">
+                  Ми знаходимо резерви для вашого зростання та відкриваємо для
+                  вас нові горизонти
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="container">
+          <h2 class="section__title">Проекти та клієнти</h2>
+          <p class="section__text">
+            Наші проекти - успішні
+            <span class="accent"
+              >запуски бізнесів як в Україні, так і в країнах Європи</span
+            >, серед яких освітня галузь, енергетичний бізнес, торгівля, сфера
+            послуг, громадські організації та об&rsquo;єднання.
+          </p>
+          <p class="section__text">
+            Наш досвід від відкриття для клієнта бізнесу з повного нуля до
+            налагодження вже існуючих бізнес-процесів та їх автоматизації,
+            побудова моделей виходу на міжнародний ринок та запуску
+            експорно-імпортних операцій, написання бізнес-планів для стартапів
+            та грантів, підготовка до продажу та повний супровід продажу
+            компанії, пошук інвесторів для українського стартапу, масштабування
+            українського бізнесу в Європі.
+          </p>
+
+          <p class="section__text block">
+            Наші клієнти - це підприємці, підприємства, організації, компанії,
+            що активно ведуть або
+            <span class="accent-primary-dark">
+              лише починають вести бізнес
+            </span>
+            з різних галузей економіки,
+            <span class="accent-primary-dark"
+              >не залежно від їхньої організаційної форми та системи
+              оподаткування, рівня доходу та обороту.
+            </span>
+            Це і
+            <span class="accent-primary-dark"
+              >маленькі стартапи, і підприємства-представники середнього або ж
+              великого бізнесу, і фізичні особи-підприємці</span
+            >. Також до нас звертаються як за консультацією, так і за
+            повноцінними послугами,
+            <span class="accentprimary-dark"
+              >керівники відділів, управлінці, фінансові директори, власники
+              бізнесу, інвестори.</span
+            >
+          </p>
+          <p class="section__text">
+            Ми працюємо на всіх рівнях управління, адже
+            <span class="accent"
+              >в бізнесі немає неважливого і незначого.
+            </span>
+            Кожен крок, кожна дія або додає цінності продукту, або просто
+            збільшує витрати компанії.
+          </p>
+          <p class="section__text">
+            Нашим клієнтом можете стати і Ви. Адже якщо Ви знаходитесь тут,
+            значить ви вже в пошуку інформації. І якщо у Вас залишились ще
+            запитання - просто зателефонуйте чи напишіть на email і
+            зателефонуємо ми до Вас.
+            <span class="accent">
+              Немає задач в бізнесі, які не можна вирішити. Просто є довгі шляхи
+              і короткі.</span
+            >
+          </p>
+          <p class="section__text"></p>
+        </div>
+
+        <div class="mobile-none">
+          <div class="container clients__container">
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Посилання на сайт компанії-клієнта"
+              href="#"
+            >
+              <img
+                class="clients__logo"
+                src="./images/Clients-Logo/TEG.png"
+                alt="Логотип компанії-клієнта"
+                width="100"
+              />
+            </a>
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Посилання на сайт компанії-клієнта"
+              href="https://ru.biotalp.com/"
+            >
+              <img
+                class="clients__logo"
+                src="./images/Clients-Logo/biotalp.png"
+                alt="Логотип компанії-клієнта"
+                width="100"
+              />
+            </a>
+
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Посилання на сайт компанії-клієнта"
+              href="#"
+            >
+              <img
+                class="clients__logo"
+                src="./images/Clients-Logo/KVZ.jpg"
+                alt="Логотип компанії-клієнта"
+                width="70"
+              />
+            </a>
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Посилання на сайт компанії-клієнта"
+              href="https://steel-evolution.ua/ua/"
+            >
+              <img
+                class="clients__logo"
+                src="./images/Clients-Logo/stelevolution.jpg"
+                alt="Логотип компанії-клієнта"
+                width="100"
+              />
+            </a>
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Посилання на сайт компанії-клієнта"
+              href="https://almaenergy.com.ua/index.html"
+            >
+              <img
+                class="clients__logo"
+                src="./images/Clients-Logo/alma-logo.svg"
+                alt="Логотип компанії-клієнта"
+                width="70"
+              />
+            </a>
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Посилання на сайт компанії-клієнта"
+              href="#"
+            >
+              <img
+                class="clients__logo"
+                src="./images/Clients-Logo/NAU.png"
+                alt="Логотип компанії-клієнта"
+                width="100"
+              />
+            </a>
+
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Посилання на сайт компанії-клієнта"
+              href="#"
+            >
+              <img
+                class="clients__logo"
+                src="./images/Clients-Logo/guaranteed-supplier.png"
+                alt="Логотип компанії-клієнта"
+                width="100"
+              />
+            </a>
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="Посилання на сайт компанії-клієнта"
+              href="https://www.instagram.com/buitur_go/?igshid=MjEwN2IyYWYwYw%3D%3D"
+            >
+              <img
+                class="clients__logo"
+                src="./images/Clients-Logo/buytur.jpg"
+                alt="Логотип компанії-клієнта"
+                width="100"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ceo mobile-none">
+        <div class="container">
+          <h2 class="section__title">Давайте знайомитись ближче</h2>
+
+          <div class="ceo__container">
+            <div class="ceo__left-part"></div>
+
+            <div class="ceo__right-part">
+              <p class="section__text">
+                Я - <span class="accent">Кудрицька Жанна</span> - засновниця
+                консалтингової компанії <span class="accent">OptiCoreR</span>.
+              </p>
+              <p class="section__text">
+                Директорка енергетичної компанії, аналітик, консультант, PhD,
+                доцент, авторка блогу для liga.net та подкаст.
+              </p>
+              <p class="section__text">
+                20 років досвіду в економіці, 7+ років в управлінні, 12+ років
+                запуску навчальних курсів, програм, тренінгів, 7+ реалізованих
+                проектів для бізнесу.
+              </p>
+              <p class="section__text">Попрацюємо разом?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container">
+          <h2 class="section__title">Про наші цінності та візію</h2>
+
+          <p class="section__text visually-hidden">
+            Свобода – це одна з наших цінностей, яку ми втілюємо в роботі і
+            передаємо нашим клієнтам. Це слово несе не лише політичний,
+            особистісний чи економічний сенс, для нас воно більше і ширше, ніж
+            всі звикли думати і сприймати.
+          </p>
+
+          <p class="section__text visually-hidden">
+            Це свобода руху вперед, свобода мислення, свобода розвитку, свобода
+            темпу, свобода цілей, свобода бачення стратегії, свобода від впливу,
+            свобода від страху, свобода для інновацій та відкриттів,
+            <span class="accent">свобода для бізнесу</span>.
+          </p>
+
+          <p class="section__text visually-hidden">
+            Досягнення цього стану дає суттєве прискорення в розвитку. Ми не
+            розглядаємо його вузько, стосовно кожної окремої особи, ми
+            розглядаємо його комплексно для всієї вашої компанії як окремого
+            живого організму. Ми змінюємося разом з вашими потребами, тому є
+            досить гнучкими у співпраці.
+          </p>
+          <p class="section__text block">
+            <span class="accent-big">Наша візія</span> - відбудувати ефективний
+            зростаючий бізнес. Наша діяльність спрямована на<span
+              class="accent-primary-dark"
+            >
+              </span
+            >
+            популяризацію управлінських та фінансових знань серед
+            власників бізнесу та управлінців,
+            <span class="accent-primary-dark">
+              впровадження процесного підходу до управління в бізнес середнього
+              та великого рівня</span
+            >, розвитку управлінських функцій та навичок, підтримку та розвиток малого і середнього бізнесу та розбудову економіки
+            вцілому.
+          </p>
+        </div>
+
+        <div class="container">
+          <p class="section__text accent-slogan">
+            Наші цінності - професіоналізм та ефективність, інновації та
+            свобода, етика та довіра
+          </p>
+          <p class="section__text visually-hidden">
+            Наша <span class="accent">історія</span> почалася з різнобічного та
+            цікавого досвіду, який окреслив наш професійний шлях і досягнення,
+            та об&#39;єднав експертів в єдину команду з бажанням ділитися і
+            допомагати.
+          </p>
+          <p class="section__text visually-hidden">
+            Реалізація проекту створення окремої консалтингової компанії
+            прийшлась саме на той час, коли наша країна постала перед великими
+            викликами і випробуваннями. І ми зрозуміли, що саме зараз
+            <span class="accent">цінність нашої роботи є найбільшою.</span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts-info">
+      <div class="container">
+        <div class="footer__left-part">
+          <address class="footer__address">
+            <p class="footer__address-text">м. Київ</p>
+            <ul class="list">
+              <li class="address-item">
+                <a class="footer__link link" href="mailto:opticorer@gmail.com"
+                  ><span class="accent-primary">opticorer</span>@gmail.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="footer__link link" href="tel:+380964355652"
+                  >+38 <span class="accent-primary">(096)</span> 435-56-52</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Footer Contacts -->
+        <div class="footer__central-part">
+          <!-- Footer Logo -->
+          <a href="/" class="logo"
+            >OptiCore<span class="footer__logo-part">R</span
+            ><sup><span class="logo__sup">TM</span></sup>
+          </a>
+        </div>
+        <!-- Footer Social -->
+        <div class="footer__right-part">
+          <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.instagram.com/kudrytska.zh?igsh=dzRoanN1dnFldGE1&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на інстаграм"
+                ><svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com/profile.php?id=61563443216060"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на фейсбук"
+              >
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/zhanna-kudrytska-8091075b/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на лінкедін"
+              >
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link youtube"
+                href="https://www.youtube.com/@user-up3ve5vn5k/podcasts"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на ютуб"
+              >
+                <svg class="footer__social-link-icon youtube" width="80" height="32">
+                  <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__documents container">
+        <a
+          class="footer__document"
+          href="./privacy-notice.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Політика конфіденційності"
+          >Політика конфіденційності</a
+        >
+
+        <a
+          class="footer__document"
+          href="./terms-of-use.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Умови використання"
+          >Умови використання</a
+        >
+
+        <a
+          class="footer__document"
+          href="./oferta.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Публічний договір оферта"
+          >Публічний договір оферта</a
+        >
+      </div>
+
+      <div class="container">
+        <p class="all-rights-reserved_text">&copy; All rights reserved</p>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "QgycdGusZnWM2LFvx",
+          });
+      })();
+    </script>
+  </body>
+</html>

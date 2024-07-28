@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">OptiCoreR</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+          <button
+            type="button"
+            class="mobile-menu__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <!-- Header Logo -->
+          <div class="logo__wraper">
+            <a href="/" class="logo">
+              <span class="logo__header-part">Opti</span>
+              <p>Core</p>
+              <p>R</p>
+            </a>
+          </div>
+
+          <!-- Header Menu -->
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-list-item">
+              <a href="./index.html" class="link main-nav__menu-link"
+                >Про нас</a
+              >
+            </li>
+            <li class="main-nav__menu-list-item">
+              <a href="./services.html" class="link main-nav__menu-link"
+                >Послуги</a
+              >
+              <ul class="main-nav__submenu-list">
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-consultation.html"
+                    class="link main-nav__submenu-link"
+                    >Консультації</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-analasys.html"
+                    class="link main-nav__submenu-link"
+                    >Аналіз бізнесу</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-processes.html"
+                    class="link main-nav__submenu-link"
+                    >Опис та оптимізація бізнес-процесів</a
+                  >
+                </li>
+
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-fin-models.html"
+                    class="link main-nav__submenu-link"
+                    >Фінансове моделювання</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-business-plan.html"
+                    class="link main-nav__submenu-link"
+                    >Написання бізнес-планів</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-franch-audit.html"
+                    class="link main-nav__submenu-link"
+                    >Аудит франшизи</a
+                  >
+                </li>
+                <li class="main-nav__submenu-list-item">
+                  <a
+                    href="./services-trainings.html"
+                    class="link main-nav__submenu-link"
+                    >Тренінги</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__menu-list-item">
+              <a href="./education.html" class="link main-nav__menu-link"
+                >Академія</a
+              >
+            </li>
+
+            <li class="main-nav__menu-list-item">
+              <a
+                href="./blog.html"
+                class="link main-nav__menu-link current-page"
+                >Блог</a
+              >
+            </li>
+
+            <li class="main-nav__menu-list-item contacts-info">
+              <a href="#contacts-info" class="link main-nav__menu-link"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+
+          <!-- Mobile Menu -->
+          <div
+            class="mobile-menu__container js-menu-container"
+            id="mobile-menu"
+          >
+            <button type="button" class="mobile-menu__button js-close-menu">
+              <svg class="button__icon" width="24" height="24">
+                <use href="./images/svg/symbol-defs.svg#icon-Close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu list">
+              <li>
+                <a href="./index.html" class="link main-nav__menu-link"
+                  >Про нас</a
+                >
+              </li>
+              <li>
+                <a href="./services.html" class="link main-nav__menu-link"
+                  >Послуги</a
+                >
+              </li>
+              <li>
+                <a href="./education.html" class="link main-nav__menu-link"
+                  >Академія</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./blog.html"
+                  class="link main-nav__menu-link current-page"
+                  >Блог</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link main-nav__menu-link mail"
+                  href="mailto:opticorer@gmail.com"
+                  >opticorer@gmail.com</a
+                >
+              </li>
+              <li>
+                <a class="link main-nav__menu-link" href="tel:+380964355652"
+                  >+38 (096) 435-56-52</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Подкасти, публікації, база знань про бізнес</h1>
+      <!-- Blog section -->
+
+      <section class="blog">
+        <div class="container">
+          <ul class="blog__list">
+            <li class="blog__list-item podcasts frame">
+              <a href="./blog.html#podcasts" class="blog_link link">
+                <div class="blog__description">
+                  <h2 class="blog__name">ПОДКАСТИ</h2>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog__list-item articles frame">
+              <a href="./blog.html#articles" class="blog_link link">
+                <div class="blog__description">
+                  <h2 class="blog__name">ПУБЛІКАЦІЇ</h2>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Podcasts section -->
+      <section class="podcasts" id="podcasts">
+        <div class="container">
+          <h2 class="section__title">Подкасти</h2>
+          <ul class="podcasts__list">
+            <li class="podcasts__list-item">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/dakWHFOfKmo?si=iW1iMwCKqPvOOSn6"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </li>
+
+            <li class="podcasts__list-item">
+              <div class="podcasts__card">
+                <p class="articles__text date">06.07.2024</p>
+                <h2 class="podcasts__name">
+                  Франшиза. Що потрібно знати перед стартом. Початок шляху
+                </h2>
+                <h3 class="podcasts__text anotation">
+                  Говоримо про франшизу. Розбираємо всі ЗА та ПРОТИ ведення
+                  бізнесу через купівлю франшизи.
+                </h3>
+                <p class="podcasts__text">
+                  Питань багато: Чий це бізнес? Хто за рахунок кого
+                  масштабується в цьому бізнесі? Яка відповідальність у сторін?
+                  Як екологічно вийти з цього бізнесу? Як досягти прибутку? Які
+                  обмеження по прибутку є в цьому бізнесі? Все це ми обговорюємо
+                  прямо тут.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Articles section -->
+      <section class="articles" id="articles">
+        <div class="container">
+          <h2 class="section__title">Публікації</h2>
+          <ul class="articles__list">
+            <li class="articles__list-item frame">
+              <article class="articles__card">
+                <div class="articles__description">
+                  <p class="articles__text date">21.03.2024</p>
+                  <h2 class="articles__name">
+                    Система демотивації чи стихійність бізнес-процесів?
+                  </h2>
+                  <h3 class="articles__text anotation">
+                    Системні помилки в роботі - це не лише про мотивацію, це про
+                    налагодження бізнес-процесів.
+                  </h3>
+                  <p class="articles__text quoters">
+                    - Герцог, добудьте мені лист королеви, я доручаю цю місію
+                    саме вам.
+                  </p>
+                  <p class="articles__text quoters">
+                    - Мені Ваша Величність? Я з задоволенням піду у відставку,
+                    але мушу відмовитися виконати Ваш наказ, - відповів герцог.
+                  </p>
+                  <p class="articles__text quoters">
+                    - Ну добре, добре, я сам, я сам, - роздратовано сказав
+                    король. - Все доводиться робити самому.
+                  </p>
+                  <p class="articles__text author">
+                    Олександр Дюма, "Д'Артаньян і три мушкетери"
+                  </p>
+                </div>
+
+                <a
+                  class="articles__link link"
+                  href="https://blog.liga.net/user/zkudrytska/article/52517"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="Стаття Кудрицької Жанни"
+                  >Читати далі...
+                </a>
+              </article>
+            </li>
+
+            <li class="articles__list-item frame">
+              <article class="articles__card">
+                <div class="articles__description">
+                  <p class="articles__text date">17.04.2024</p>
+                  <h2 class="articles__name">
+                    Як підприємцю налагодити управління своїм бізнесом через
+                    впровадження бізнес-процесів
+                  </h2>
+                  <h3 class="articles__text anotation">
+                    Підприємці завжди стикаються з питаннями управління своїм
+                    бізнесом. Іноді це нагадує діряву шлюпку, коли підприємець
+                    закриває дірку пальцем, а вода починає текти з іншої дірки
+                  </h3>
+                  <p class="articles__text">
+                    Але ж пальців на руках десять і підприємець знову закриває
+                    нову дірку іншим пальцем, та з’являється ще одна нова. І так
+                    до моменту, поки всі його пальці закривають проріхи в
+                    шлюпці. Знайомо?
+                  </p>
+                </div>
+
+                <a
+                  class="articles__link link"
+                  href="https://blog.liga.net/user/zkudrytska/article/52769"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="Стаття Кудрицької Жанни"
+                  >Читати далі...
+                </a>
+              </article>
+            </li>
+
+            <li class="articles__list-item frame">
+              <article class="articles__card">
+                <div class="articles__description">
+                  <p class="articles__text date">23.05.2024</p>
+                  <h2 class="articles__name">
+                    Бізнес-проблеми: від виявлення до вирішення
+                  </h2>
+                  <h3 class="articles__text anotation">
+                    Управління бізнесом, досягнення його прибутковості та
+                    ефективності – це завдання, яке вимагає постійної уваги та
+                    відданості. Проте, навіть найбільші компанії стикаються з
+                    різного роду проблемами, які можуть затримати їх розвиток та
+                    вплинути на їхню успішність.
+                  </h3>
+                  <p class="articles__text">
+                    У цій статті я хочу поговорити з вами про механізм
+                    виникнення бізнес-проблем і розкрити ключові нюанси, які
+                    потребують уваги ще до того, як проблема прийде у ваш
+                    бізнес.
+                  </p>
+                </div>
+
+                <a
+                  class="articles__link link"
+                  href="https://blog.liga.net/user/zkudrytska/article/52769"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="Стаття Кудрицької Жанни"
+                  >Читати далі...
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts-info">
+      <div class="container">
+        <div class="footer__left-part">
+          <address class="footer__address">
+            <p class="footer__address-text">м. Київ</p>
+            <ul class="list">
+              <li class="address-item">
+                <a class="footer__link link" href="mailto:opticorer@gmail.com"
+                  ><span class="accent-primary">opticorer</span>@gmail.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="footer__link link" href="tel:+380964355652"
+                  >+38 <span class="accent-primary">(096)</span> 435-56-52</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Footer Contacts -->
+        <div class="footer__central-part">
+          <!-- Footer Logo -->
+          <a href="/" class="logo"
+            >OptiCore<span class="footer__logo-part">R</span
+            ><sup><span class="logo__sup">TM</span></sup>
+          </a>
+        </div>
+        <!-- Footer Social -->
+
+        <div class="footer__right-part">
+          <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.instagram.com/kudrytska.zh?igsh=dzRoanN1dnFldGE1&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на інстаграм"
+                ><svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com/profile.php?id=61563443216060"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на фейсбук"
+              >
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/zhanna-kudrytska-8091075b/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на лінкедін"
+              >
+                <svg class="footer__social-link-icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a
+                class="footer__social-link youtube"
+                href="https://www.youtube.com/@user-up3ve5vn5k/podcasts"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Посилання на ютуб"
+              >
+                <svg class="footer__social-link-icon youtube" width="80" height="32">
+                  <use href="./images/svg/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__documents container">
+        <a
+          class="footer__document"
+          href="./privacy-notice.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Політика конфіденційності"
+          >Політика конфіденційності</a
+        >
+
+        <a
+          class="footer__document"
+          href="./terms-of-use.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Умови використання"
+          >Умови використання</a
+        >
+
+        <a
+          class="footer__document"
+          href="./oferta.html"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="Посилання на Публічний договір оферта"
+          >Публічний договір оферта</a
+        >
+      </div>
+
+      <div class="container">
+        <p class="all-rights-reserved_text">&copy; All rights reserved</p>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

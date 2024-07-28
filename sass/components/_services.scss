@@ -1,0 +1,244 @@
+/* =========================
+Services page
+============================ */
+.services {
+
+&__intro {
+    margin-top: 81px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // padding-bottom: 20px;
+
+    max-width: 1920px;
+    color: $secondary-color;
+    border-bottom: 4px solid $dark-pink-color-accent;
+
+    // background-image: linear-gradient(to top, rgba(208, 208, 208, 1), rgba(208, 208, 208, 0.0)),
+    //     url();
+
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+@media screen and (max-width: 767px) {    
+    margin-top: 61px;
+    width: 100%;    
+    max-width: 767px;
+}
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 100%;
+    max-width: 1199px;
+}
+
+@media screen and (min-width: $desktop) {
+    max-width: 1920px;
+    max-height: 600px;
+}
+}
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    &-item {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            width: calc((100% - 60px) / 2);
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: calc((100% - 60px) / 3);
+        }
+
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        &-item:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        &-item:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.services__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services__list-item:hover,
+.services__list-item:focus {
+    background-color: $pic-color;
+}
+
+.services__description {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px; 
+
+    color: $dark-pink-color-accent;
+       
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services__description:hover,
+.services__description:focus {
+    color: $text-color;
+}
+
+.services__name {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.38px;
+
+    text-align: center;
+}
+
+/* ===========================
+Realisation
+===============================*/
+.section__text-number {
+    position: absolute;
+
+    color: rgb(216, 191, 216, 0.4);
+    font-size: 70px;
+    font-weight: 700;
+    z-index: -1;
+}
+
+/* ===========================
+Business consultation
+===============================*/
+
+.business-consultation {
+
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+            url(/images/business-consultation.png);
+        
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+.part {
+    width: 768px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            }
+}
+
+/* ===========================
+Business-analasys
+===============================*/
+
+.business-analasys {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+            url(/images/jpg/business-analasys.jpg);
+    
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.section__text.list {
+    margin-bottom: 5px;
+}
+
+/* ===========================
+Business-processes
+===============================*/
+.optimization-bp__list-item {
+    list-style: inside;
+
+    padding-left: 25px;
+}
+
+/* ===========================
+fin-models
+===============================*/
+
+.fin-models {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url(/images/svg/Diagrams.svg);
+
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    border-bottom: 4px solid $background-backdrop-menu-color;
+}
+
+/* ===========================
+Business plan section
+===============================*/
+.business-plan {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url(/images/working.png);
+    
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ===========================
+Franch-audit section
+===============================*/
+
+.franch-audit {
+    // max-height: fit-content;
+    
+    // background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)),
+    //     url(/images/franch-audit.png);
+    
+    // background-position: right;
+    // background-size: contain;
+    // background-repeat: no-repeat;    
+}
+
+
+/* ===========================
+Trainings  
+===============================*/
+
+.trainings {
+    max-height: fit-content;
+    
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+            url(/images/tranings.svg);
+    
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+
+.trainings__list {
+    margin-bottom: 30px;
+}
+
+.trainings__list-item {
+    list-style: inside;
+
+    padding-left: 25px;
+}
