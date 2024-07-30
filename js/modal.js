@@ -45,7 +45,7 @@
     }
     if (!refs.tel.value.trim() || !/^\+380\d{9}$/.test(refs.tel.value.replace(/\s+/g, ''))) {
       isValid = false;
-      showFormError(refs.telError, 'Введіть дійсний номер телефону (формат: +380XXXXXXXXX)');
+      showFormError(refs.telError, 'Номер телефону є обов’язковим');
     }
     if (refs.email.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(refs.email.value)) {
       isValid = false;
