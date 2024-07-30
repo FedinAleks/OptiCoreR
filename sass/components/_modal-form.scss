@@ -369,3 +369,65 @@
     color: $primary-color;
     }
 }
+
+$primary-color: #4CAF50;
+$error-color: #f8d7da;
+$error-text-color: #721c24;
+$success-color: $primary-color;
+$success-text-color: white;
+$border-radius: 5px;
+$z-index-high: 1000;
+
+// Міксін для повідомлень
+@mixin message($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border-radius: $border-radius;
+  z-index: $z-index-high;
+}
+
+// Стилі
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.5em;
+}
+
+.form__group-input {
+  font-family: monospace;
+  text-transform: capitalize;
+}
+
+.success-message {
+  @include message($success-color, $success-text-color);
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.success-message.is-hidden {
+  display: none;
+}
+
+.form-error {
+  @include message($error-color, $error-text-color);
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border: 1px solid lighten($error-color, 10%);
+  display: none; 
+}
+
+.form-error.is-visible {
+  display: block;
+}
+
+#tel-error {
+  top: 4.1em;
+}
+
+#policy-error {
+  top: 5em;
+}

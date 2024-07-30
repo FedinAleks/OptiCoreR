@@ -24,6 +24,11 @@
   function toggleModal() {
     document.body.classList.toggle("modal-open");
     refs.modal.classList.toggle("is-hidden");
+    
+    // Очистити поля форми при закритті модального вікна
+    if (refs.modal.classList.contains("is-hidden")) {
+      clearForm();
+    }
   }
 
   function validateForm(event) {
@@ -43,7 +48,7 @@
     }
     if (refs.email.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(refs.email.value)) {
       isValid = false;
-      showError(refs.email, 'Введіть дійсну електронну пошту');
+      showFormError(refs.email, 'Введіть дійсну електронну пошту');
     }
     if (!refs.agreement.checked) {
       isValid = false;
@@ -75,7 +80,7 @@
         }, 5000);
 
         // Очистити поля форми
-        refs.form.reset();
+        clearForm();
       })
       .catch(error => {
         // Обробка помилок, якщо відправка email не вдалася
@@ -83,13 +88,6 @@
         alert('Не вдалося відправити email. Спробуйте ще раз пізніше.');
       });
     }
-  }
-
-  function showError(element, message) {
-    const error = document.createElement('div');
-    error.className = 'error-message';
-    error.textContent = message;
-    element.parentElement.appendChild(error);
   }
 
   function showFormError(element, message) {
@@ -104,7 +102,17 @@
     refs.nameError.textContent = '';
     refs.telError.textContent = '';
     refs.policyError.textContent = '';
-    document.querySelectorAll('.error-message').forEach(el => el.remove());
+  }
+
+  function clearForm() {
+    console.log("Clearing form"); // Додайте це для перевірки
+    refs.form.reset();
+    refs.agreement.checked = false; // Очистити стан чекбокса
+    // Додатково очищення значень інших полів, якщо потрібно
+    refs.name.value = '';
+    refs.tel.value = '';
+    refs.email.value = '';
+    refs.request.value = '';
   }
 
   function formatPhoneNumber(event) {
@@ -127,4 +135,3 @@
       .join(' ');
   }
 })();
-

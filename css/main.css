@@ -855,7 +855,7 @@ Header
 }
 
 .agreement {
-  margin-left: 7px;
+  margin-left: 3em;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.71429;
@@ -873,10 +873,10 @@ Header
     margin-top: 0.5em;
   }
   .form__group-input {
-    font-family: monospace; /* Покращує вигляд цифр */
+    font-family: monospace; 
   }
   .form__group-input {
-    text-transform: capitalize; /* Перша літера кожного слова велика */
+    text-transform: capitalize; 
   }
 
   .success-message {
@@ -905,7 +905,7 @@ Header
     border: 1px solid #f5c6cb;
     border-radius: 4px;
     z-index: 1000;
-    display: none; /* Сховати за замовчуванням */
+    display: none; 
   }
   
   .form-error.is-visible {
