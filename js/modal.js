@@ -12,6 +12,7 @@
     successMessage: document.getElementById('success-message'),
     nameError: document.getElementById('name-error'),
     telError: document.getElementById('tel-error'),
+    emailError: document.getElementById('email-error'), // Додано
     policyError: document.getElementById('policy-error')
   };
 
@@ -48,7 +49,7 @@
     }
     if (refs.email.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(refs.email.value)) {
       isValid = false;
-      showFormError(refs.email, 'Введіть дійсну електронну пошту');
+      showFormError(refs.emailError, 'Введіть дійсну електронну пошту'); // Змінено
     }
     if (!refs.agreement.checked) {
       isValid = false;
@@ -101,6 +102,7 @@
   function clearErrors() {
     refs.nameError.textContent = '';
     refs.telError.textContent = '';
+    refs.emailError.textContent = ''; // Додано
     refs.policyError.textContent = '';
   }
 
@@ -121,7 +123,7 @@
       value = '380' + value;
     }
     value = value.slice(0, 12); // Залишаємо тільки 12 цифр
-    event.target.value = '+380 ' + value.slice(3); // Видалено пробіли
+    event.target.value = '+380' + value.slice(3); // Видалено пробіли
   }
 
   function capitalizeName(event) {

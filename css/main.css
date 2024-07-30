@@ -864,7 +864,8 @@ Header
 }
 .agreement__link {
   text-decoration: underline;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
   color: #d8bfd8;
 }
 .error-message {
@@ -883,7 +884,9 @@ Header
     position: fixed;
     top: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -912,13 +915,20 @@ Header
     display: block;
   }
   
+  #name-error {
+    top: 1em;
+  }
   #tel-error {
-    top: 4.1em;
+    top: 4em;
   }
-  
+  #email-error {
+    top: 7em;
+  }
   #policy-error {
-    top: 5em;
+    top: 10em;
   }
+
+  
   
   
 
