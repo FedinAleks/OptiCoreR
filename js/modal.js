@@ -102,15 +102,15 @@
   function clearErrors() {
     refs.nameError.textContent = '';
     refs.telError.textContent = '';
-    refs.emailError.textContent = ''; // Додано
+    refs.emailError.textContent = '';
     refs.policyError.textContent = '';
   }
 
   function clearForm() {
-    console.log("Clearing form"); // Додайте це для перевірки
+    console.log("Clearing form"); 
     refs.form.reset();
     refs.agreement.checked = false; // Очистити стан чекбокса
-    // Додатково очищення значень інших полів, якщо потрібно
+    // Додатково очищення значень інших полів
     refs.name.value = '';
     refs.tel.value = '';
     refs.email.value = '';
