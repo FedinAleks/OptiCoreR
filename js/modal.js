@@ -118,13 +118,36 @@
   }
 
   function formatPhoneNumber(event) {
-    let value = event.target.value.replace(/\D/g, '');
-    if (!value.startsWith('380')) {
-      value = '380' + value;
+    let value = event.target.value.replace(/\D/g, ''); // Видалення всіх нецифрових символів
+  
+    // Видалення "38" при видаленні цифр
+    if (value.length < 3) {
+      value = '';
+    } else if (!value.startsWith('380')) {
+      value = '380' + value.slice(3);
     }
-    value = value.slice(0, 12); // Залишаємо тільки 12 цифр
-    event.target.value = '+380' + value.slice(3); // Видалено пробіли
+  
+    // Обмежити довжину до 12 цифр
+    value = value.slice(0, 12);
+  
+    // Форматування номера телефону з пробілами
+    let formattedValue = '+380';
+    if (value.length > 3) {
+      formattedValue += ' ' + value.slice(3, 5); // Додаємо перші 2 цифри після +380
+    }
+    if (value.length > 5) {
+      formattedValue += ' ' + value.slice(5, 8); // Додаємо наступні 3 цифри
+    }
+    if (value.length > 8) {
+      formattedValue += ' ' + value.slice(8, 10); // Додаємо наступні 2 цифри
+    }
+    if (value.length > 10) {
+      formattedValue += ' ' + value.slice(10, 12); // Додаємо останні 2 цифри
+    }
+  
+    event.target.value = formattedValue.trim(); // Оновлюємо значення поля
   }
+  
 
   function capitalizeName(event) {
     let value = event.target.value;
