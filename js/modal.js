@@ -30,6 +30,10 @@
     if (refs.modal.classList.contains("is-hidden")) {
       clearForm();
     }
+    else {
+      // Встановити значення телефону на +380 при відкритті модального вікна
+      refs.tel.value = '+380';
+    }
   }
 
   function validateForm(event) {
